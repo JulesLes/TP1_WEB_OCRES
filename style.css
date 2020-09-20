@@ -3,40 +3,41 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
 :root{
 	--rose:#FE2055;
+	--noir:#000000;
+	--gris:#222222;
+	--blanc:#FFFFFF;
+	--jaune:#F7FF3C;
+	--vert: #A8FAAF;
 }
 body {
     padding: 0px;
     margin: 0px;
-    background: #000000;
+    background: var(--noir);
 }
 .navbar {
 	font-family: 'Montserrat', lighter;
-    background:#222;
-    border-radius: 1em;
-    margin-left: 5em;
-	margin-right: 5em;
+    background:var(--gris);
 
 }
 .navbar-nav {
 	list-style-type: none; 
     justify-content: center;
     display: flex;
-
 }
 
 .navbar-nav li{ 
 	margin-left: 3em;
 	margin-right: 3em;
-	font-size: 1em;
+	font-size: 1.25em;
 }
 .navbar-nav a {
-	color: #FFFFFF;
+	color: var(--blanc);
 	text-decoration: none;
 }
 .container {
 	justify-content: center;
 	font-size: 4em;
-	color: #FFFFFF;
+	color: var(--blanc);
 }
 .description {
 	margin-top: 3em;
@@ -56,26 +57,25 @@ body {
 	align-items: center;
 
 }
-.article a{
-	text-decoration: none;
-	color: #FFF;
-	/*position: relative;
-	display: inline-block;
-	padding: 15px 30px;
-	text-transform: uppercase;
-	text-decoration: none;
-	overflow: hidden;
-	transition: 0.2s;*/
-}
 .article li:hover{
 	text-align: center;
-	color: #FFF;
+	color: var(--noir);
+	transition-delay: 0.1s;
+}
+.article li:hover:nth-child(1){
 	background: var(--rose);
 	box-shadow: 0 0 10px var(--rose), 0 0 40px var(--rose), 0 0 80px var(--rose);
-	transition-delay: 1s;
+}
+.article li:hover:nth-child(2){
+	background: var(--jaune);
+	box-shadow: 0 0 10px var(--jaune), 0 0 40px var(--rose), 0 0 80px var(--jaune);
+}
+.article li:hover:nth-child(3){
+	background: var(--vert);
+	box-shadow: 0 0 10px var(--vert), 0 0 40px var(--rose), 0 0 80px var(--vert);
 }
 .article li{
-	color: #FFF;
+	color: var(--blanc);
 	margin-left: 3em;
 	margin-right: 3em;
 	height: 15%;
@@ -85,22 +85,11 @@ body {
 	border: 2px solid var(--rose);
 }
 .article li:nth-child(2){
-	border: 2px solid #F7FF3c;
+	border: 2px solid var(--jaune);
 }
 .article li:nth-child(3){
-	border: 2px solid #a8faaf ;
+	border: 2px solid var(--vert) ;
 }
-
-/*.article li:nth-child(1){
-	top: 0;
-	left:-100%;
-	height: 2px;
-	background: linear-gradient(90deg,transparent,#2196f3);
-}
-.article li: hover nth-child(1){
-	left:100%;
-	transition: 1s;
-}*/
 .article h3{
 	text-align: center;
 }
@@ -112,3 +101,16 @@ body {
 	width: 3em;
 	filter: invert(100%);
 }
+.article li:hover img{
+	filter: invert(0%);
+}
+.footer-copyright {
+    color: var(--rose);
+    font-family: 'Montserrat';
+    text-align: center;
+    position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+
+   }

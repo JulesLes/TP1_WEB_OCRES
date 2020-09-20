@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+:root{
+	--rose:#FE2055;
+	--noir:#000000;
+	--gris:#333333;
+	--blanc:#FFFFFF;
+	--jaune:#F7FF3C;
+	--vert: #A8FAAF;
+	--bleu: #318ce7;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background: var(--noir);
+}
+.name {
+	font-family: 'Codystar', bold;
+	color: var(--blanc);
+	text-align: center;
+	font-size: 4em;
+}
+.title {
+	font-family: 'Montserrat', bold;
+	color: var(--rose);
+	text-align: left;
+	margin-left: 1em;
+	font-size: 2em;
+}
+.article {
+	display: flex;
+	justify-content: center;
+	font-family: 'Open Sans', bold;
+}
+.ECEM {
+	border: 2px solid var(--bleu);
+	border-radius: 1em;
+	margin: 2em;
+}
+.ECEM header{
+	color: var(--bleu);
+	text-align: center;
+	font-size: 2em;
+}
+.ECEL {
+	border: 2px solid var(--bleu);
+	border-radius: 1em;
+	margin: 2em;
+}
+.ECEL header{
+	color: var(--bleu);
+	text-align: center;
+	font-size: 2em;
+}
+.Chula {
+	border: 2px solid var(--vert);
+	border-radius: 1em;
+	margin: 2em;
+}
+.Chula header{
+	color: var(--vert);
+	text-align: center;
+	font-size: 2em;
+}
+.date {
+	color: var(--gris);
+	text-align: center;
+	font-size: 1em;
+}
+.article p {
+	color: var(--blanc);
+	font-size: 1em;
+	padding: 1em;
+}
+.diplome h4:nth-child(1){
+	color: var(--bleu);
+}
+.diplome h4:nth-child(2){
+	color: var(--vert);
+}
+.diplome h4:nth-child(3){
+	color: var(--bleu);
+}
