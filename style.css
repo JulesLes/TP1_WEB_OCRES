@@ -8,6 +8,8 @@
 	--blanc:#FFFFFF;
 	--jaune:#F7FF3C;
 	--vert: #A8FAAF;
+	--bleu: #318ce7;
+	--main-width: 60vw;
 }
 body {
     padding: 0px;
@@ -17,7 +19,10 @@ body {
 .navbar {
 	font-family: 'Montserrat', lighter;
     background:var(--gris);
-
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .navbar-nav {
 	list-style-type: none; 
@@ -39,6 +44,7 @@ body {
 	font-size: 4em;
 	color: var(--blanc);
 }
+
 .description {
 	margin-top: 3em;
 	font-family: 'Codystar', sans-serif; 
@@ -48,6 +54,7 @@ body {
 .description h1{
 	margin-top: 1.5em;
 }
+
 .article {
 	font-family: 'Montserrat';
 	list-style-type: none; 
@@ -104,13 +111,97 @@ body {
 .article li:hover img{
 	filter: invert(0%);
 }
+.main {
+	height: 100vh;
+}
+.title {
+	font-family: 'Codystar', bold;
+	color: var(--rose);
+	text-align: center;
+	margin-left: 1em;
+	font-size: 3em;
+}
+.article-main {
+	display: flex;
+	justify-content: center;
+	font-family: 'Open Sans', bold;
+}
+.ECEM {
+	border: 2px solid var(--bleu);
+	margin: 2em;
+}
+.ECEM header{
+	color: var(--bleu);
+	text-align: center;
+	font-size: 2em;
+}
+.ECEL {
+	border: 2px solid var(--bleu);
+	margin: 2em;
+}
+.ECEL header{
+	color: var(--bleu);
+	text-align: center;
+	font-size: 2em;
+}
+.Chula {
+	border: 2px solid var(--jaune);
+	margin: 2em;
+}
+.Chula header{
+	color: var(--jaune);
+	text-align: center;
+	font-size: 2em;
+}
+.date {
+	color: var(--gris);
+	text-align: center;
+	font-size: 1em;
+}
+.article-main p {
+	color: var(--blanc);
+	font-size: 1em;
+	padding: 1em;
+}
+.diplome1  {
+	color: var(--bleu);
+	text-align: center;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 1em;
+}
+.diplome2 {
+	color: var(--jaune);
+	text-align: center;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 1em;
+}
+.diplome3 {
+	color: var(--bleu);
+	text-align: center;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 1em;
+}
+.cursus{
+	color: var(--blanc);
+	margin-left: 1em;
+}
+.cours {
+	margin-left: 4em;
+}
 .footer-copyright {
     color: var(--rose);
     font-family: 'Montserrat';
     text-align: center;
-    position: fixed;
   	left: 0;
   	bottom: 0;
   	width: 100%;
 
-   }
+}
+iframe {
+	margin-top: 10em;
+  	width: 100%;
+  	height: calc(var(--main-width) * var(--aspect-ratio));
+}
